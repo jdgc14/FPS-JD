@@ -72,7 +72,6 @@ public class GameManager : MonoBehaviour
     {
         if (health <= 0)
         {
-            // Debug.Log("You are dead");
             Time.timeScale = 0f;
             gameOverPanel.SetActive(true);
         }
@@ -80,7 +79,7 @@ public class GameManager : MonoBehaviour
 
     public void CheckScore()
     {
-        if (score >= 10 && !minionsDefeated)
+        if (score >= 60 && !minionsDefeated)
         {
             minionsDefeated = true;
             missionPanel.SetActive(true);
